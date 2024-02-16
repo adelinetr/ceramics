@@ -16,15 +16,16 @@ export default function Header() {
 
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex justify-between h-[8vh]">
         <div
           onClick={handleMenu}
           className={`bg-black ${
             isMenuOpen ? "flex" : "hidden"
-          } opacity-40 w-full h-screen absolute`}
+          } opacity-40 w-full z-20 h-screen absolute`}
         ></div>
-        <div className="flex mx-4 mt-4 justify-center gap-2 items-center">
+        <div className="flex mx-4 mt-4 justify-center gap-2 items-center xl:mx-12">
           <svg
+            className="cursor-pointer"
             onClick={handleMenu}
             width="50"
             height="53"
@@ -51,11 +52,11 @@ export default function Header() {
               stroke-linecap="round"
             />
           </svg>
-
           <h3 className="text-3xl font-archivo text-[#414141]">Ceramic</h3>
         </div>
-        <div className="flex mt-4 justify-center items-center space-x-5 mx-4">
+        <div className="flex mt-4 justify-center items-center space-x-5 mx-4 xl:mx-12">
           <svg
+            className="cursor-pointer"
             width="23"
             height="22"
             viewBox="0 0 23 22"
@@ -72,6 +73,7 @@ export default function Header() {
           </svg>
 
           <svg
+            className="cursor-pointer"
             width="29"
             height="29"
             viewBox="0 0 29 29"
@@ -100,7 +102,7 @@ export default function Header() {
           id="menu"
           className={`${
             isMenuOpen ? "flex" : "hidden"
-          } z-20 flex-col absolute bg-white h-screen w-[85%]`}
+          } z-20 flex-col absolute bg-white h-screen w-[85%] lg:w-[40%]`}
         >
           <CSSTransition
             in={isMenuOpen}
@@ -114,6 +116,7 @@ export default function Header() {
               <div className="flex flex-row justify-between items-center">
                 <h3 className="text-3xl text-[#414141]">Ceramic</h3>
                 <svg
+                  className="cursor-pointer"
                   onClick={handleMenu}
                   id="close"
                   width="21"
@@ -139,18 +142,18 @@ export default function Header() {
                 </svg>
               </div>
 
-              <ul className="mt-10 lg:mt-0 flex flex-col mb-4 lg:mb-0 lg:flex-row justify-center items-start">
-                <li className="text-lg text-[#101010] font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
-                  Home
+              <ul className="mt-10 flex flex-col mb-4 justify-center items-start">
+                <li className="text-lg cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all text-[#101010] font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
+                  <a href="/">Home</a>
                 </li>
-                <li className="text-lg text-[#101010] font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
-                  Classes
+                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
+                  <a href="/">Classes</a>
                 </li>
-                <li className="text-lg text-[#101010] font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
-                  Shop
+                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
+                <a href="/">Shop</a>
                 </li>
-                <li className="text-lg text-[#101010] font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
-                  Contacts
+                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
+                <a href="/">Contacts</a>
                 </li>
               </ul>
 
