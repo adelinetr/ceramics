@@ -2,7 +2,7 @@ import Image from "./Image.png";
 
 export default function Discover() {
   return (
-    <div className="w-full h-screen lg:max-w-[900px] mx-auto">
+    <div className="w-full h-screen lg:max-w-[1000px] mx-auto">
       <div className="mx-5">
         <h3 className="text-5xl font-archivo uppercase mb-3">
           discover more ceramics for your home{" "}

@@ -7,11 +7,11 @@ export default function Hero() {
       <div className="flex flex-col absolute lg:flex-row items-end">
         <div className="font-archivo mt-9 mx-5 lg:mx-10 lg:mt-10 xl:mt-40">
           <div className="lg:absolute z-10 lg:w-[95%] lg:h-fit">
-            <h1 className="text-6xl w-full lg:hidden xl:text-8xl lg:flex-col lg:text-[5.5rem] mb-4 text-[#414141]">
+            <h1 className="text-6xl w-full lg:hidden xl:text-8xl lg:flex-col lg:text-[5.5rem] mb-5 text-[#414141]">
               Explore the World of Ceramics
             </h1>
             <h1 className="hidden text-5xl w-full lg:absolute lg:flex xl:text-8xl lg:flex-col lg:text-[4.5rem] mb-4 text-[#414141]">
-              <span className="bg-white w-fit rounded-xl pr-7">
+              <span className="bg-white w-fit rounded-xl mb-2 pr-7">
                 Exploring the World
               </span>
               <span className="bg-white w-fit rounded-xl">of Ceramics</span>

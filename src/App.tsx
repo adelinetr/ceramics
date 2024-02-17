@@ -4,6 +4,7 @@ import Explore from './Components/Explore/Explore';
 import Header from './Components/Header/Header';
 import Hero from './Components/Hero/Hero';
 import PotteryClub from './Components/PotteryClub/PotteryClub';
+import Shop from './Components/Shop/Shop';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Explore />
       <PotteryClub />
       <Discover />
+      <Shop />
     </div>
   );
 }

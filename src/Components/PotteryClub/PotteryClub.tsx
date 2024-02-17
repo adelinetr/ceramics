@@ -2,7 +2,7 @@ import Image from './image.png'
 
 export default function PotteryClub() {
   return (
-    <section className="w-full h-fit my-40 lg:max-w-[1000px] mx-auto flex flex-col justify-center items-center">
+    <section className="w-full h-fit my-40 lg:max-w-[1200px] mx-auto flex flex-col justify-center items-center">
       <div className='mx-5 flex flex-col justify-center items-center md:flex-row-reverse'>
         <div className='mb-8'>
         <button className='hidden mb-5 md:block border border-[#B4A483] mt-3 rounded-lg text-xl md:text-base uppercase py-2 w-full md:w-fit px-12 hover:bg-[#B4A483] hover:text-white transition-all duration-300 text-[#B4A483]'>Join the Club</button>
@@ -16,7 +16,7 @@ export default function PotteryClub() {
         </div>
 
         <div className='md:mx-12'>
-            <img className='rounded-xl md:w-[80vw] h-[90vh] object-cover' src={Image} alt="" />
+            <img className='rounded-xl md:w-[80vw] h-[70vh] object-cover' src={Image} alt="" />
         </div>
       </div>
     </section>
