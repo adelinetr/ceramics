@@ -14,7 +14,7 @@ export default function Discover() {
             the art form.
           </p>
           <br />
-          <p>
+          <p className="text-[#535353]">
             Ceramics Club strives to provide a space for creative individuals
             who have a passion for pottery or an interest in learning more about
             the art form.
