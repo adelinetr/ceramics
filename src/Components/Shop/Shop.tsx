@@ -3,7 +3,7 @@ import Image1 from "./01.png";
 
 export default function Shop() {
   return (
-    <section className="w-full bg-[#F6F6F6] h-screen py-12">
+    <section className="w-full bg-[#F6F6F6] h-fit py-12 lg:py-40">
       <div className="mx-5 flex flex-col justify-center items-center">
         <h3 className="font-archivo text-4xl mb-9 lg:text-5xl lg:hidden">
           Shop

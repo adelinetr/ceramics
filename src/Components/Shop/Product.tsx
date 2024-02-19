@@ -14,15 +14,15 @@ export default function Product(props: { image: string }) {
   };
   return (
     <div className="flex flex-col md:flex-row md:space-x-10 lg:max-w-[850px] xl:max-w-[1000px] md:mt-8 justify-center items-center">
-      <div className="mb-5 w-[80vw] sm:w-[50%] md:w-[550px] xl:w-[680px]">
+      <div className="mb-5 w-[80vw] sm:w-[50%] md:w-fit xl:w-[680px]">
         <img
-          className="rounded-xl w-full md:w-[400px] h-[40vh] md:h-[65vh] object-cover"
+          className="rounded-xl w-full md:w-[400px] h-[40vh] lg:h-[60vh] md:h-[50vh] object-cover"
           src={props.image}
           alt=""
         />
       </div>
 
-      <div>
+      <div className="w-fit md:w-1/2 lg:w-fit">
         <div className="flex text-3xl md:text-4xl text-[#2f2f2f] mb-3 font-archivo justify-between items-center">
           <h3>Vase</h3>
           <span>39,99€</span>
