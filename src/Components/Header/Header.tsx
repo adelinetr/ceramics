@@ -5,6 +5,11 @@ import "aos/dist/aos.css";
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [openServices, setServices] = useState(false)
+
+  const handleServices = () => {
+    setServices(!openServices)
+  } 
 
   const handleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -13,6 +18,7 @@ export default function Header() {
   useEffect(() => {
     AOS.init();
   }, []);
+
 
   return (
     <div>
@@ -143,17 +149,47 @@ export default function Header() {
               </div>
 
               <ul className="mt-10 flex flex-col mb-4 justify-center items-start">
-                <li className="text-lg cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all text-[#101010] font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
+                <li className="text-lg cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all text-[#101010] font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 ">
                   <a href="/">Home</a>
                 </li>
-                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
-                  <a href="/">Classes</a>
+                <li className="text-lg flex flex-col text-[#101010] duration-200 transition-all font-medium font-inter w-full my-2 rounded-sm">
+                  <div onClick={handleServices} className="flex cursor-pointer hover:bg-[#E9E7E7] w-full py-3 px-5 rounded-sm justify-between items-center">
+                    <span>Services</span>
+                    <svg
+                      id="arrow"
+                      className={`${openServices ? 'rotate-90 duration-200 transition-all ease-in-out' : 'rotate-0 duration-200 transition-all ease-in-out'}`}
+                      width="8"
+                      height="12"
+                      viewBox="0 0 8 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.375 11.25L6.625 6L1.375 0.75"
+                        stroke="#505050"
+                        stroke-width="1.91667"
+                      />
+                    </svg>
+                  </div>
+                  <div className={`${openServices ? 'flex pointer-default px-5 flex-col items-start mt-4 justify-start' : 'hidden'}`}>
+                    <ul className="space-y-6 my-4 font-light pointer-default font-archivo text-[#5c5c5c]">
+                      <li>
+                        <a href="./" className="hover:text-black hover:font-normal duration-200 transition-all">Pottery Classes</a>
+                      </li>
+                      <li>
+                        <a href="./" className="hover:text-black hover:font-normal duration-200 transition-all">Events</a>
+                      </li>
+                      <li>
+                        <a href="./" className="hover:text-black hover:font-normal duration-200 transition-all">Career Opportunities</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
-                <a href="/">Shop</a>
+                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 ">
+                  <a href="/">Shop</a>
                 </li>
-                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 bg-[#F4F4F4]">
-                <a href="/">Contacts</a>
+                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 ">
+                  <a href="/">Contacts</a>
                 </li>
               </ul>
 
