@@ -118,7 +118,7 @@ export default function Header() {
             classNames="menu"
             unmountOnExit
           >
-            <nav className="mt-10 mx-6">
+            <nav className="mt-10 lg:mt-8 mx-6">
               <div className="flex flex-row justify-between items-center">
                 <h3 className="text-3xl text-[#414141]">Ceramic</h3>
                 <svg
@@ -149,11 +149,11 @@ export default function Header() {
               </div>
 
               <ul className="mt-10 flex flex-col mb-4 justify-center items-start">
-                <li className="text-lg cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all text-[#101010] font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 ">
+                <li className="text-lg lg:text-base cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all text-[#101010] font-medium font-inter w-full py-3 lg:py-2 rounded-sm mb-2 px-5 ">
                   <a href="/">Home</a>
                 </li>
-                <li className="text-lg flex flex-col text-[#101010] duration-200 transition-all font-medium font-inter w-full my-2 rounded-sm">
-                  <div onClick={handleServices} className="flex cursor-pointer hover:bg-[#E9E7E7] w-full py-3 px-5 rounded-sm justify-between items-center">
+                <li className="text-lg lg:text-base  flex flex-col text-[#101010] duration-200 transition-all font-medium font-inter w-full my-2 rounded-sm">
+                  <div onClick={handleServices} className="flex cursor-pointer hover:bg-[#E9E7E7] w-full py-3 lg:py-2 px-5 rounded-sm justify-between items-center">
                     <span>Services</span>
                     <svg
                       id="arrow"
@@ -172,7 +172,7 @@ export default function Header() {
                     </svg>
                   </div>
                   <div className={`${openServices ? 'flex pointer-default px-5 flex-col items-start mt-4 justify-start' : 'hidden'}`}>
-                    <ul className="space-y-6 my-4 font-light pointer-default font-archivo text-[#5c5c5c]">
+                    <ul className="space-y-6 my-4 font-light lg:text-base pointer-default font-archivo text-[#5c5c5c]">
                       <li>
                         <a href="./" className="hover:text-black hover:font-normal duration-200 transition-all">Pottery Classes</a>
                       </li>
@@ -185,19 +185,19 @@ export default function Header() {
                     </ul>
                   </div>
                 </li>
-                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 ">
+                <li className="text-lg lg:text-base  text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 lg:py-2 rounded-sm mb-2 px-5 ">
                   <a href="/">Shop</a>
                 </li>
-                <li className="text-lg text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 rounded-sm mb-2 px-5 ">
+                <li className="text-lg lg:text-base  text-[#101010] cursor-pointer hover:bg-[#E9E7E7] duration-200 transition-all font-medium font-inter w-full py-3 lg:py-2 rounded-sm mb-2 px-5 ">
                   <a href="/">Contacts</a>
                 </li>
               </ul>
 
-              <div className="space-y-2">
-                <button className="w-full bg-[#2E2E2E] text-white font-archivo text-lg font-light py-2.5 rounded-md">
+              <div className="space-y-2 lg:flex justify-center items-center lg:space-x-2 lg:space-y-0">
+                <button className="w-full bg-[#2E2E2E] text-white font-archivo text-lg font-light py-2.5 lg:text-base rounded-md">
                   Log in
                 </button>
-                <button className="w-full border border-[#2E2E2E] text-[#2E2E2E] font-archivo text-lg font-normal py-2.5 rounded-md">
+                <button className="w-full border border-[#2E2E2E] text-[#2E2E2E] font-archivo text-lg lg:text-base  font-normal py-2.5 rounded-md">
                   Sign Up
                 </button>
               </div>
