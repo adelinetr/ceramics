@@ -3,7 +3,7 @@ import './Newsletter.css'
 export default function Newsletter() {
   return (
     <section className="w-full flex flex-col justify-center mx-auto">
-      <div className="lg:flex bg-img h-screen lg:h-[70vh] lg:flex-row mx-auto items-center justify-center">
+      <div className="lg:flex news-img h-screen lg:h-[70vh] lg:flex-row mx-auto items-center justify-center">
         <div className="mt-2 mx-5 flex flex-col">
           <h3 className="text-5xl text-center">Subscribe to our newsletter</h3>
           <p className="mt-5 text-[#535353] lg:w-[50%] lg:text-center lg:mx-auto">
