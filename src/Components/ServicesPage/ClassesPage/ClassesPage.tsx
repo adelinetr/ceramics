@@ -1,11 +1,15 @@
 import Header from "../../Header/Header";
-import Hero from "./Hero";
+import ChooseClass from "./ChooseClass/ChooseClass";
+import Hero from "./HeroClass/Hero";
+import Teacher from "./Teacher/Teacher";
 
 export default function ClassesPage(){
     return(
         <div>
             <Header />
             <Hero />
+            <ChooseClass />
+            <Teacher />
         </div>
     )
 }

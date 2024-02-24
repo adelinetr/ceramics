@@ -45,4 +45,7 @@
   .bg-img {
     display: block;
   }
+  .mobile-bg {
+    display: none;
+  }
 }/*# sourceMappingURL=Hero.css.map */
