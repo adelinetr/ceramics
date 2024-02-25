@@ -11,7 +11,7 @@ export default function Teacher() {
   };
 
   return (
-    <section className="h-screen lg:max-w-[1600px] mx-auto">
+    <section className="h-screen lg:max-w-[1500px] mx-auto">
       <div className="relative">
         <div className="relative md:mt-20 flex mx-2 md:gap-6 md:items-center justify-center">
           <img
