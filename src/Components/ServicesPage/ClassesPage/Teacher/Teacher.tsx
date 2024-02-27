@@ -15,7 +15,7 @@ export default function Teacher() {
       <div className="relative">
         <div className="relative md:mt-20 flex mx-2 md:gap-6 md:items-center justify-center">
           <img
-            className="rounded-lg w-full absolute md:w-[30%] md:relative h-[90vh] object-cover"
+            className={`rounded-lg w-full ${handleDescription ? 'brightness-50 duration-200 transition-all ease-in-out' : ''} absolute md:w-[30%] md:relative h-[90vh] object-cover`}
             src={Image1}
             alt=""
           />
