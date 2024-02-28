@@ -1,4 +1,5 @@
 import Header from "../../Header/Header";
+import AboutClub from "./AboutClub/AboutClub";
 import ChooseClass from "./ChooseClass/ChooseClass";
 import Hero from "./HeroClass/Hero";
 import MostPopular from "./MostPopular/MostPopular";
@@ -12,6 +13,7 @@ export default function ClassesPage(){
             <ChooseClass />
             <Teacher />
             <MostPopular />
+            <AboutClub />
         </div>
     )
 }

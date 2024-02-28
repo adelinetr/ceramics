@@ -36,8 +36,8 @@ export default function Teacher() {
             onClick={handleClick}
             className="sticky z-10 md:absolute cursor-pointer"
           >
-            <span className="bg-white w-[14px] top-[30em] md:top-[-2em] md:z-20 left-40 md:left-[14.3em] h-[14px] absolute z-10  rounded-full"></span>
-            <span className="bg-[#ffffff30] w-[24px] animate-ping top-[29.7em] md:top-[-2.3em] md:left-[14em] left-[9.7em] h-[24px] absolute z-10  rounded-full"></span>
+            <span className="bg-white w-[14px] top-[30em] md:top-[7em] md:z-20 left-40 md:left-[14.3em] h-[14px] absolute z-10  rounded-full"></span>
+            <span className="bg-[#ffffff30] w-[24px] animate-ping top-[29.7em] md:top-[6.7em] md:left-[14em] left-[9.7em] h-[24px] absolute z-10  rounded-full"></span>
           </div>
 
           <div
@@ -47,7 +47,7 @@ export default function Teacher() {
                 : "hidden"
             }`}
           >
-            <div className="z-10 absolute w-[320px] shadow-xl shadow-[#00000050] px-8 py-5 top-[32em] md:bottom-20 md:top-0 right-14 h-fit rounded-lg bg-white">
+            <div className="z-10 absolute w-[320px] shadow-xl shadow-[#00000050] px-8 py-5 top-[32em] md:bottom-20 md:top-10 right-[-5em] h-fit rounded-lg bg-white">
               <span className="uppercase text-[0.7rem] tracking-widest text-[#535353]">
                 Pottery Teacher
               </span>
