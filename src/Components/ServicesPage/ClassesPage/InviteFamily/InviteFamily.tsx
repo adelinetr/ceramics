@@ -1,11 +1,12 @@
 import Counter from "../../../Homepage/Shop/Counter";
 import Image1 from "./Image1.png";
 import InputComponent from "./InputComponent";
+import Selector from "./Selector";
 
 export default function InviteFamily() {
   return (
     <section>
-      <div className="h-fit py-20 flex justify-center items-center lg:space-x-10">
+      <div className="h-fit py-32 flex justify-center items-center lg:space-x-10">
         <div>
           <img
             className="w-[400px] h-[60vh] rounded-lg object-cover"
@@ -34,8 +35,9 @@ export default function InviteFamily() {
               </span>
               <Counter />
             </div>
-            <div>
-                <button className="uppercase font-archivo border bg-[#424242] text-white px-16 py-1.5 rounded-lg">Book</button>
+            <div className="font-inter">
+                <Selector />
+                <button className="mt-10 uppercase font-archivo border bg-[#424242] text-white px-16 py-1.5 rounded-lg">Book</button>
             </div>
           </div>
         </div>
