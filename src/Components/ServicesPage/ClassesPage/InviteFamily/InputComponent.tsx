@@ -5,8 +5,8 @@ interface Input {
 
 export default function InputComponent(props: Input) {
     return(
-        <div className="my-4">
-            <input type="text" placeholder={props.placeholder} className="border font-inter font-light px-2 rounded-md py-1 outline-none" />
+        <div>
+            <input type="text" placeholder={props.placeholder} className="border w-full lg:w-fit font-inter font-light px-2 rounded-md py-2 lg:py-1 outline-none" />
         </div>
     )
 }

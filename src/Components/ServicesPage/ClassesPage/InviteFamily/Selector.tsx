@@ -18,7 +18,7 @@ const loadOptions = (
 
 export default function Selector() {
   return (
-    <div className="w-[70%]">
+    <div className="w-full lg:w-[70%]">
       <AsyncSelect
         styles={{
           control: (baseStyles, state) => ({
