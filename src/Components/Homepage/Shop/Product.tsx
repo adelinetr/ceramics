@@ -1,17 +1,7 @@
 import { useState } from "react";
+import Counter from "./Counter";
 
 export default function Product(props: { image: string }) {
-  const [amount, setAmount] = useState(1);
-
-  const chooseAmount = (
-    event: React.MouseEvent<HTMLButtonElement>,
-    increment: boolean
-  ) => {
-    event.preventDefault();
-    setAmount((prevAmount) =>
-      increment ? prevAmount + 1 : Math.max(prevAmount - 1, 0)
-    );
-  };
   return (
     <div className="flex flex-col md:flex-row md:space-x-10 lg:max-w-[850px] xl:max-w-[1000px] md:mt-8 justify-center items-center">
       <div className="mb-5 w-[80vw] sm:w-[50%] md:w-fit xl:w-[680px]">
@@ -27,63 +17,13 @@ export default function Product(props: { image: string }) {
           <h3>Vase</h3>
           <span>39,99€</span>
         </div>
-        <p className="font-archivo lg:text-sm lg:w-[80%] lg:mt-5 text-[#535353]">
+        <p className="font-archivo lg:text-sm lg:w-[80%] lg:mt-5 mb-4 text-[#535353]">
           Ceramics Club strives to provide a space for creative individuals who
           have a passion for pottery or an interest in learning more about the
           art form.
         </p>
-        <form>
-          <div className="flex bg-white relative mt-8 mx-auto lg:ml-0 mb-8 items-center border border-[#00000030] rounded-lg max-w-[8rem]">
-            <button
-              id="decrement-btn"
-              onClick={(e) => chooseAmount(e, false)}
-              type="button"
-              className="rounded-s-md px-3 bg-white"
-            >
-              <svg
-                className="w-3 h-8  text-gray-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 2"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h16"
-                />
-              </svg>
-            </button>
-            <input
-              type="text"
-              className="h-8 border-none placeholder:text-xl placeholder:text-black text-center w-12 outline-none"
-              placeholder={`${amount}`}
-            />
-            <button
-              id="increment-btn"
-              onClick={(e) => chooseAmount(e, true)}
-              className="rounded-r-md h-8 px-3 bg-white"
-            >
-              <svg
-                className="w-3 h-6 py-1 text-gray-700"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 1v16M1 9h16"
-                />
-              </svg>
-            </button>
-          </div>
-        </form>
+        <Counter />
+       
 
         <div className="flex lg:text-sm flex-col lg:mt-20 lg:flex-row lg:space-x-8 lg:space-y-0 space-y-5">
           <button className="border transition-all duration-200 hover:shadow-md flex justify-center items-center gap-3 font-inter border-[#6C6C6C] rounded-md px-6 py-3 lg:px-9">

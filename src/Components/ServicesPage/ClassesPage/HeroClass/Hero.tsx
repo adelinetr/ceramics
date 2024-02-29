@@ -2,7 +2,7 @@ import "./Hero.css";
 
 export default function Hero() {
   return (
-    <section className="xl:max-w-[1700px] mx-auto">
+    <section className="xl:max-w-[1760px] mx-auto">
       <div className="mx-auto flex relative flex-col justify-start items-center">
         <div className="mobile-bg lg:hidden "></div>
         <div className="bg-img mx-auto h-fit lg:block"></div>

@@ -5,10 +5,10 @@ import Image3 from "./Image3.png";
 
 export default function AboutClub() {
   return (
-    <section className="w-full mx-auto mb-10 mt-16">
+    <section className="w-full mx-auto mb-1 mt-16 lg:max-w-[1600px]">
       <div className="w-[100%] relative">
         <img
-          className="h-screen md:h-[80vh] absolute w-[100%] object-cover z-[-10] brightness-50"
+          className="h-screen rounded-md md:h-[80vh] absolute w-[100%] object-cover z-[-10] brightness-50"
           src={Image1}
           alt=""
         />
@@ -28,7 +28,7 @@ export default function AboutClub() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row lg:space-x-1">
         <ImageButton
           image={Image2}
           heading="Shop"
