@@ -16,7 +16,7 @@ export default function ChooseClass() {
           <div className="flex justify-center items-center space-x-8">
             <img src={ArrowPrev} alt="" />
             <img src={ArrowNext} alt="" />
-          </div> 
+          </div>
         </div>
         <div className="lg:flex lg:max-w-[1300px] mx-auto">
           <ClassComponent

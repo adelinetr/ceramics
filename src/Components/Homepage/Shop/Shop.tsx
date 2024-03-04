@@ -8,7 +8,6 @@ export default function Shop() {
         <h3 className="font-archivo text-4xl mb-9 lg:text-5xl lg:hidden">
           Shop
         </h3>
-
         <div className="flex justify-center items-center space-x-20">
           <Product image={Image1} />
           <div className="hidden lg:flex flex-col space-y-5">
