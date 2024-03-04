@@ -2,26 +2,27 @@ import Image from "./Image.png";
 
 export default function Discover() {
   return (
-    <div className="w-full h-screen lg:max-w-[1000px] mx-auto">
-      <div className="mx-5">
-        <h3 className="text-5xl font-archivo uppercase mb-3">
-          discover more ceramics for your home{" "}
+    <div className="w-full h-fit my-20 lg:w-full lg:max-w-[1200px] mx-auto xl:max-w-[1400px]">
+      <div className="mx-5 relative lg:mx-0">
+        <div className="flex flex-col md:flex-row md:space-x-12 md:mx-6">
+        <h3 className="text-5xl lg:text-7xl md:w-[55%]  font-archivo uppercase">
+          Discover more ceramics for your home{" "}
         </h3>
-        <div className="flex flex-col md:flex-row md:space-x-12">
-          <p className="text-[#535353]">
+          <p className="text-[#535353] mt-6 md:mt-0 md:w-[70%] lg:w-[50%]">
             Ceramics Club strives to provide a space for creative individuals
             who have a passion for pottery or an interest in learning more about
-            the art form.
-          </p>
-          <br />
-          <p className="text-[#535353]">
-            Ceramics Club strives to provide a space for creative individuals
+            the art form. Ceramics Club strives to provide a space for creative individuals
             who have a passion for pottery or an interest in learning more about
             the art form.
           </p>
         </div>
-
-        <img className="mt-10 md:h-[52vh] rounded-xl w-full object-cover" src={Image} alt="" />
+        <div className="relative lg:h-[90vh]">
+          <img
+            className="mt-32 lg:mt-60 lg:rounded-sm md:h-[52vh] lg:h-[60vh] lg:w-[800px] object-cover lg:absolute lg:right-0 rounded-xl w-full"
+            src={Image}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

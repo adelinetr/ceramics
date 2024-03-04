@@ -5,7 +5,7 @@ import Photo2 from "./images/shop.png";
 export default function Explore() {
   return (
     <div className="h-fit relative w-full mt-6 md:mt-40 flex flex-col items-center justify-center lg:max-w-[900px] mx-auto">
-      <div className="flex mx-12 flex-col md:flex-row lg:mx-auto">
+      <div className="flex mx-10 lg:space-x-12 flex-col lg:flex-row lg:mx-auto">
         <ExploreComponent
           image={Photo1}
           heading="Our Courses"

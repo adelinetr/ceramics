@@ -40,7 +40,6 @@ export default function Hero() {
             Join the club
           </button>
         </div>
-        
       </div>
     </main>
   );
