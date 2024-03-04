@@ -6,14 +6,18 @@ export default function ExploreComponent(props: {
   return (
     <div className="mx-5 mb-16">
       <div className="md:object-cover md:h-[260px] rounded-xl overflow-hidden md:w-[420px]">
-        <img className="rounded-xl w-full h-full transition-all cursor-pointer hover:brightness-90 hover:scale-105 duration-300 object-cover" src={props.image} alt="" />
+        <img
+          className="rounded-xl w-full h-full transition-all cursor-pointer hover:brightness-90 hover:scale-105 duration-300 object-cover"
+          src={props.image}
+          alt=""
+        />
       </div>
 
       <div className="mt-4">
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-xl font-archivo font-medium">{props.heading}</h3>
           <svg
-          className="lg:hidden"
+            className="lg:hidden"
             width="28"
             height="16"
             viewBox="0 0 28 16"
@@ -26,7 +30,9 @@ export default function ExploreComponent(props: {
             />
           </svg>
         </div>
-        <p className="text-[0.9rem] font-archivo text-[#535353]">{props.text}</p>
+        <p className="text-[0.9rem] font-archivo text-[#535353]">
+          {props.text}
+        </p>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Photo2 from "./images/02.png";
 
 export default function Hero() {
   return (
-    <div className="h-[90vh] w-full relative xl:max-w-[1600px] flex flex-col items-center mx-auto">
+    <main className="h-[90vh] w-full relative xl:max-w-[1600px] flex flex-col items-center mx-auto">
       <div className="flex flex-col absolute lg:flex-row items-end">
         <div className="font-archivo mt-9 mx-5 lg:mx-10 lg:mt-10 xl:mt-40">
           <div className="lg:absolute z-10 lg:w-[95%] lg:h-fit">
@@ -40,7 +40,8 @@ export default function Hero() {
             Join the club
           </button>
         </div>
+        
       </div>
-    </div>
+    </main>
   );
 }
