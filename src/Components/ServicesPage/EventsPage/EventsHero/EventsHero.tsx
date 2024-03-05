@@ -1,15 +1,15 @@
 import HeroComponent from "../../HeroComponent";
-import HeroImage from "./Image.png";
+import Image1 from "./Image1.png";
 
-export default function Hero() {
+export default function EventsHero() {
   return (
-    <section className="mx-auto">
+    <main className="xl:max-w-[1760px] mx-auto">
       <HeroComponent
-        image={HeroImage}
-        heading="Classes"
+        image={Image1}
+        heading="Events"
         paragraph="Ready to dive into the world of ceramics? Become a member today and gain access to all the benefits our club has to offer. "
-        buttonClass=""
+        buttonClass="hidden"
       />
-    </section>
+    </main>
   );
 }

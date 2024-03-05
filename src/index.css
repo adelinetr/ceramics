@@ -6,8 +6,19 @@
     .favourite-button{
         @apply flex justify-center items-center gap-3 border border-[#B5464D] bg-[#B5464D] hover:bg-[#a14348] font-inter duration-300 transition-all text-white rounded-md px-6 lg:px-9 py-3
     }
-
     .add-to-cart{
         @apply border transition-all duration-200 hover:shadow-md flex justify-center items-center gap-3 font-inter border-[#6C6C6C] rounded-md px-6 py-3 lg:px-9
+    }
+    .heading-h3{
+        @apply text-5xl lg:text-7xl font-archivo;
+    }
+    .paragraph{
+        @apply mt-4 w-[90%] text-sm xl:text-base lg:w-[40%] xl:w-[30%] text-center font-archivo font-extralight;
+    }
+    .hero-img{
+        @apply h-[90vh] w-full object-cover rounded-lg;
+    }
+    .hero-text{
+        @apply absolute w-[90%] text-white mx-auto flex flex-col justify-center items-center;
     }
   }

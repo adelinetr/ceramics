@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
   return (
     <>
-      <header className="flex justify-between h-[8vh]">
+      <header className="flex justify-between h-[9vh] xl:max-w-[1780px] mx-auto">
         <MenuComponent state={isMenuOpen} onClick={handleMenu} />
         <MainIcons />
         <div

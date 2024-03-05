@@ -36,11 +36,9 @@ export default function Teacher() {
         </div>
 
         <div className="z-10 md:absolute md:bottom-[20em]">
-          <div 
-          className="sticky group z-10 md:absolute cursor-pointer">
+          <div onMouseEnter={handleClick}
+              onMouseLeave={handleClick} className="sticky group z-10 md:absolute cursor-pointer">
             <span
-              onMouseEnter={handleClick}
-              onMouseLeave={handleClick}
               className="bg-white w-[14px] top-[30em] md:top-[7em] md:z-20 left-40 md:left-[14.3em] h-[14px] absolute z-10  rounded-full"
             ></span>
             <span className="bg-[#ffffff30] w-[24px] animate-ping top-[29.7em] md:top-[6.7em] md:left-[14em] left-[9.7em] h-[24px] absolute z-10  rounded-full"

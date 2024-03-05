@@ -8,7 +8,7 @@ export default function AboutClub() {
     <section className="w-full mx-auto mb-1 mt-16 lg:max-w-[1600px]">
       <div className="w-[100%] relative">
         <img
-          className="h-screen rounded-md md:h-[80vh] absolute w-[100%] object-cover z-[-10] brightness-50"
+          className="h-screen md:h-[80vh] absolute w-[100%] object-cover z-[-10] brightness-50"
           src={Image1}
           alt=""
         />

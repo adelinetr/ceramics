@@ -11,14 +11,14 @@ export default function MenuComponent(props: {
         className={`bg-black ${props.state ? "flex" : "hidden"} 
         opacity-40 w-full z-20 h-screen absolute`}
       ></div>
-      <div className="flex mx-4 mt-4 justify-center gap-2 items-center xl:mx-12">
+      <div className="flex my-2 mx-1 mt-4 justify-center gap-2 items-center">
         <img
           src={MenuIcon}
           className="cursor-pointer"
           onClick={props.onClick}
           alt=""
         />
-        <h3 className="text-3xl font-archivo text-[#414141]">Ceramic</h3>
+        <h3 className=" text-2xl xl:text-3xl font-archivo text-[#414141]">Ceramic</h3>
       </div>
     </>
   );
