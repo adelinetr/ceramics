@@ -7,9 +7,9 @@ import Image3 from "./Image3.png";
 
 export default function ChooseClass() {
   return (
-    <section>
-      <div className="h-fit py-20">
-        <div className="font-archivo flex flex-col lg:flex-row justify-center lg:justify-between lg:max-w-[1200px] items-center mx-auto">
+    <section className="h-fit lg:max-w-[1000px] lg:mx-auto py-20 xl:max-w-[1150px]">
+      <div className="px-4 lg:max-w-[1200px] mx-auto">
+        <div className="font-archivo flex lg:max-w-[1120px] flex-col lg:flex-row justify-center lg:justify-between items-center">
           <h3 className="text-4xl mt-10 text-center mb-6">
             Choose your favourite class
           </h3>
@@ -18,7 +18,7 @@ export default function ChooseClass() {
             <img src={ArrowNext} alt="" />
           </div>
         </div>
-        <div className="lg:flex lg:max-w-[1300px] mx-auto">
+        <div className="lg:flex lg:max-w-[1100px] xl:max-w-[1300px] space-x-10 mx-auto xl:space-x-20">
           <ClassComponent
             image={Image1}
             heading="Wheel Throwing Mastery"

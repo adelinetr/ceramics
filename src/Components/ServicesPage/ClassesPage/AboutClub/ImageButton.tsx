@@ -12,7 +12,7 @@ export default function ImageButton(props: ImgButton) {
       <div className="lg:mx-0 cursor-pointer group relative lg:mt-1 flex my-1 mx-1 lg:my-0 justify-center items-center">
         <div className=" overflow-hidden">
           <img
-            className="h-[40vh] w-[100vw] brightness-50 group-hover:brightness-75 group-hover:scale-125 transition-all duration-200 lg:w-[50vw] object-cover"
+            className="h-[45vh] w-[100vw] brightness-50 group-hover:brightness-75 group-hover:scale-125 transition-all duration-200 lg:w-[50vw] object-cover"
             src={props.image}
             alt=""
           />

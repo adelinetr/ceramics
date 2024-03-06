@@ -14,7 +14,7 @@ export default function Counter() {
   };
   return (
     <form>
-      <div className="flex bg-white relative mt-0 mx-auto lg:ml-0 mb-8 items-center border border-[#00000030] rounded-lg max-w-[8rem]">
+      <div className="flex bg-white relative mt-0 mx-auto lg:ml-0 mb-5 items-center border border-[#00000030] rounded-lg max-w-[8rem]">
         <button
           id="decrement-btn"
           onClick={(e) => chooseAmount(e, false)}
@@ -22,7 +22,7 @@ export default function Counter() {
           className="rounded-s-md px-3 bg-white"
         >
           <svg
-            className="w-3 h-8  text-gray-500"
+            className="w-2 h-4  text-gray-500"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -40,7 +40,7 @@ export default function Counter() {
         
         <input
           type="text"
-          className="h-8 border-none placeholder:text-xl placeholder:text-black text-center w-12 outline-none"
+          className="h-8 border-none placeholder:text-base placeholder:text-black text-center w-12 outline-none"
           placeholder={`${amount}`}/>
 
         <button
@@ -48,7 +48,7 @@ export default function Counter() {
           onClick={(e) => chooseAmount(e, true)}
           className="rounded-r-md h-8 px-3 bg-white">
           <svg
-            className="w-3 h-6 py-1 text-gray-700"
+            className="w-2 h-4 py-1 text-gray-700"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

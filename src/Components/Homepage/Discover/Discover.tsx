@@ -16,9 +16,9 @@ export default function Discover() {
             the art form.
           </p>
         </div>
-        <div className="relative lg:h-[90vh]">
+        <div className="relative lg:h-fit flex justify-end">
           <img
-            className="mt-32 lg:mt-60 lg:rounded-sm md:h-[52vh] lg:h-[60vh] lg:w-[800px] object-cover lg:absolute lg:right-0 rounded-xl w-full"
+            className="mt-32 lg:mt-60 lg:rounded-sm md:h-[52vh] lg:h-[70vh] lg:w-[700px] object-cover rounded-xl w-full"
             src={Image}
             alt=""
           />

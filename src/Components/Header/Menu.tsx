@@ -11,7 +11,7 @@ export default function MenuComponent(props: {
         className={`bg-black ${props.state ? "flex" : "hidden"} 
         opacity-40 w-full z-20 h-screen absolute`}
       ></div>
-      <div className="flex my-2 mx-1 mt-4 justify-center gap-2 items-center">
+      <div className="flex my-2 mx-4 mt-4 justify-center gap-2 items-center">
         <img
           src={MenuIcon}
           className="cursor-pointer"

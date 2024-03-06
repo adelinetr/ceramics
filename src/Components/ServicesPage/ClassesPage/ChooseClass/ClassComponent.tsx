@@ -5,7 +5,7 @@ export default function ClassComponent(props: {
   className?: string;
 }) {
   return (
-    <div className={`${props.className} mx-auto font-archivo mt-5 w-[350px] lg:w-[320px] h-auto object-cover`}>
+    <div className={`${props.className} mx-auto lg:ml-0 font-archivo mt-5 w-[350px] lg:w-[320px] h-auto object-cover`}>
       <div className='md:flex justify-center items-center md:space-x-5'>
         <img
           src={props.image}
