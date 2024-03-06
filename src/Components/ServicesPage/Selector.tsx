@@ -1,24 +1,35 @@
 import AsyncSelect from "react-select/async";
-import { ClassesOption, ClassesOptions } from "./DataClasses";
 
-const filterClasses = (inputValue: string) => {
-  return ClassesOptions.filter((i) =>
-    i.value.toLowerCase().includes(inputValue.toLowerCase())
-  );
-};
+interface Option {
+  label: string;
+  value: string;
+}
 
-const loadOptions = (
-  inputValue: string,
-  callback: (options: ClassesOption[]) => void
-) => {
-  setTimeout(() => {
-    callback(filterClasses(inputValue));
-  }, 500);
-};
+interface SelectorProps {
+  options: Option[],
+  className: string,
+  placeholder: string
+}
 
-export default function Selector() {
+export default function Selector(props: SelectorProps) {
+  const { options } = props;
+
+  const filterClasses = (inputValue: string): Option[] => {
+    return options.filter((option) =>
+      option.value.toLowerCase().includes(inputValue.toLowerCase())
+    );
+  };
+  
+  const loadOptions = (
+    inputValue: string,
+    callback: (options: Option[]) => void
+  ) => {
+    setTimeout(() => {
+      callback(filterClasses(inputValue));
+    }, 500);
+  };
   return (
-    <div className="w-full lg:w-[70%]">
+    <div className={`w-full ${props.className}`}>
       <AsyncSelect
         styles={{
           control: (baseStyles, state) => ({
@@ -38,7 +49,7 @@ export default function Selector() {
             },
           }),
         }}
-        placeholder="Choose a class..."
+        placeholder={props.placeholder}
         loadOptions={loadOptions}
         defaultOptions
       />

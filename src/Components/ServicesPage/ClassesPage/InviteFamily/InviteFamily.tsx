@@ -1,7 +1,8 @@
 import Counter from "../../../Homepage/Shop/Counter";
+import { ClassesOptions } from "../../DataClasses";
 import Image1 from "./Image1.png";
 import InputComponent from "./InputComponent";
-import Selector from "./Selector";
+import Selector from "../../Selector";
 
 export default function InviteFamily() {
   return (
@@ -36,7 +37,11 @@ export default function InviteFamily() {
               <Counter />
             </div>
             <div className="font-inter">
-              <Selector />
+              <Selector 
+              placeholder="Choose a class..."
+              options={ClassesOptions}
+              className="lg:w-[70%]"
+              />
               <button className="mt-4 w-full lg:w-fit uppercase font-archivo border bg-[#424242] text-white px-16 py-3.5 lg:py-2 rounded-lg">
                 Book
               </button>
