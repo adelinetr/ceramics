@@ -11,13 +11,15 @@ export const ClassesOptions: ClassesOption[] = [
 ]
 
 export interface Prices {
-    value:string,
-    label:string
+    minValue?: number,
+    maxValue: number,
+    label: string,
+    value: string;
 }
 
 export const PriceOptions: Prices[] = [
-    {value: 'Free', label: 'Free'},
-    {value: '15€-25€', label: '15€-25€'},
-    {value: '25€-45€', label: '25€-45€'},
+    {maxValue: 0, value:'Free', label: 'FREE'},
+    {minValue: 5, value: '5€-25€', maxValue: 25, label: '15€-25€'},
+    {minValue: 25, value: '25€-45€', maxValue: 45, label: '25€-45€'},
 ]
 

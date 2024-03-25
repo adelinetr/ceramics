@@ -37,11 +37,14 @@ export default function InviteFamily() {
               <Counter />
             </div>
             <div className="font-inter">
+              {/*
               <Selector 
               placeholder="Choose a class..."
               options={ClassesOptions}
               className="lg:w-[70%]"
+              onChange={}
               />
+              */}
               <button className="mt-4 w-full lg:w-fit uppercase font-archivo border bg-[#424242] text-white px-16 py-3.5 lg:py-2 rounded-lg">
                 Book
               </button>

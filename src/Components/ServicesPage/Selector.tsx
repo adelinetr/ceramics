@@ -1,14 +1,16 @@
 import AsyncSelect from "react-select/async";
+import { Prices } from "./DataClasses";
 
-interface Option {
+export interface Option {
   label: string;
   value: string;
 }
 
 interface SelectorProps {
-  options: Option[],
-  className: string,
-  placeholder: string
+  options: Option[];
+  className: string;
+  placeholder: string;
+  onChange: (selectedOption: Prices) => void; 
 }
 
 export default function Selector(props: SelectorProps) {
@@ -28,6 +30,7 @@ export default function Selector(props: SelectorProps) {
       callback(filterClasses(inputValue));
     }, 500);
   };
+
   return (
     <div className={`w-full ${props.className}`}>
       <AsyncSelect
