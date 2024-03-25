@@ -12,8 +12,8 @@ export default function Newsletter() {
             the art form.
           </p>
           <div className="flex flex-col w-[90%] lg:w-[60%] mx-auto mt-12 space-y-3 lg:space-y-0 lg:flex-row lg:space-x-4">
-            <input className="border px-3 py-2 focus:outline-none lg:h-[7vh] rounded-lg w-full mx-auto" type="text" placeholder="Enter your email" name="" id="" />
-            <button className="border py-2 hover:shadow-xl transition-all duration-200 rounded-lg px-6 font-archivo uppercase bg-[#232323] text-white">Subscribe</button>
+            <input className="border px-3 py-2 focus:outline-none lg:h-[4vh] rounded-lg w-full mx-auto" type="text" placeholder="Enter your email" name="" id="" />
+            <button className="border py-1.5 hover:shadow-xl transition-all duration-200 rounded-lg px-6 font-archivo uppercase bg-[#232323] text-white">Subscribe</button>
           </div>
         </div>
       </div>

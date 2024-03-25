@@ -13,7 +13,7 @@
         @apply text-5xl lg:text-7xl font-archivo;
     }
     .paragraph{
-        @apply mt-4 w-[90%] text-sm xl:text-base lg:w-[40%] xl:w-[30%] text-center font-archivo font-extralight;
+        @apply mt-4 w-[90%] text-base xl:text-base lg:w-[40%] xl:w-[30%] text-center font-archivo font-light;
     }
     .hero-img{
         @apply h-[90vh] w-full object-cover rounded-lg;
