@@ -1,67 +1,37 @@
 import { useState } from "react";
 
 export default function Counter() {
-  const [amount, setAmount] = useState(1);
-
-  const chooseAmount = (
-    event: React.MouseEvent<HTMLButtonElement>,
-    increment: boolean
-  ) => {
+  const [counter, setCounter] = useState(0);
+  const increment = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     event.preventDefault();
-    setAmount((prevAmount) =>
-      increment ? prevAmount + 1 : Math.max(prevAmount - 1, 0)
-    );
-  };
+    setCounter(counter => counter + 1);
+  }
+  const decrement = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    event.preventDefault();
+    setCounter((prevCounter) => Math.max(prevCounter - 1, 0));
+  }
+
   return (
     <form>
-      <div className="flex bg-white relative mt-0 mx-auto lg:ml-0 mb-5 items-center border border-[#00000030] rounded-lg max-w-[8rem]">
+      <div className="flex bg-white relative mt-0 mx-auto lg:ml-0 mb-5 items-center border border-[#00000030] rounded-lg w-fit">
         <button
           id="decrement-btn"
-          onClick={(e) => chooseAmount(e, false)}
+          onClick={decrement}
           type="button"
-          className="rounded-s-md px-3 bg-white"
+          className="rounded-s-md text-lg px-3 mx-0.5 bg-white hover:bg-[#ededed]"
         >
-          <svg
-            className="w-2 h-4  text-gray-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 2"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h16"
-            />
-          </svg>
+          –
         </button>
-        
         <input
           type="text"
-          className="h-8 border-none placeholder:text-base placeholder:text-black text-center w-12 outline-none"
-          placeholder={`${amount}`}/>
+          className="h-8 border-none placeholder:text-base placeholder:text-black text-center w-8 outline-none"
+          placeholder={`${counter}`}/>
 
         <button
           id="increment-btn"
-          onClick={(e) => chooseAmount(e, true)}
-          className="rounded-r-md h-8 px-3 bg-white">
-          <svg
-            className="w-2 h-4 py-1 text-gray-700"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 1v16M1 9h16"
-            />
-          </svg>
+          onClick={increment}
+          className="rounded-r-md text-lg px-3 mx-0.5 bg-white hover:bg-[#ededed]">
+          +
         </button>
       </div>
     </form>

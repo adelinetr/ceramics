@@ -3,26 +3,32 @@ import ShopButton from "./ShopButton";
 import CartIcon from "./CartIcon.svg";
 import FavouritesIcon from "./FavouritesIcon.svg";
 
-export default function Product(props: { image: string }) {
+interface ProductProps {
+  image: string;
+  name: string;
+  price: string;
+  description: string
+}
+
+export default function Product(props: ProductProps) {
+  const {image, name, price, description} = props;
   return (
     <div className="flex flex-col md:flex-row md:space-x-10 lg:max-w-[850px] xl:max-w-[1000px] md:mt-8 justify-center items-center">
       <div className="mb-5 w-[80vw] sm:w-[50%] md:w-fit xl:w-[680px]">
         <img
           className="rounded-xl w-full md:w-[600px] h-[40vh] lg:h-[60vh] md:h-[50vh] object-cover"
-          src={props.image}
+          src={image}
           alt=""
         />
       </div>
 
       <div className="w-fit md:w-1/2 lg:w-fit">
         <div className="flex text-3xl md:text-4xl text-[#2f2f2f] mb-3 font-archivo justify-between items-center">
-          <h3>Vase</h3>
-          <span>39,99€</span>
+          <h3>{name}</h3>
+          <span>{price}</span>
         </div>
         <p className="font-archivo lg:text-sm lg:w-[80%] lg:mt-5 mb-4 text-[#535353]">
-          Ceramics Club strives to provide a space for creative individuals who
-          have a passion for pottery or an interest in learning more about the
-          art form.
+          {description}
         </p>
         <Counter />
 

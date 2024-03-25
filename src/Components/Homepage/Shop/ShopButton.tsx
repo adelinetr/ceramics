@@ -1,10 +1,16 @@
-export default function ShopButton(props: {className:string, name:string, icon:string }) {
+interface ShopButtonProps {
+  className: string;
+  name: string;
+  icon: string;
+}
+
+export default function ShopButton(props: ShopButtonProps) {
+  const {className, name, icon} = props;
+
   return (
-    <button className={props.className}>
-      <img src={props.icon} alt="" />
-      {props.name}
+    <button className={className}>
+      <img src={icon} alt="" />
+      {name}
     </button>
   );
 }
-
-
